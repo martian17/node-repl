@@ -22,7 +22,7 @@ for(let i = 0; i < files.length; i++){
 }
 
 let r = repl.start({
-	prompt:"> ",
+	prompt:"\u001b[32muser>\u001b[0m ",
 	useGlobal:true
 });
 
