@@ -1,7 +1,7 @@
 let files = process.argv.slice(2);
 
-
 let repl = require("repl");
+
 
 const { Readable, Writable } = require('stream'); 
 
@@ -25,5 +25,7 @@ let r = repl.start({
 	prompt:"> ",
 	useGlobal:true
 });
+
+r.setupHistory(process.env.NODE_REPL_HISTORY,()=>{});
 
 
