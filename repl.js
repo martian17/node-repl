@@ -26,6 +26,6 @@ let r = repl.start({
 	useGlobal:true
 });
 
-r.setupHistory(process.env.NODE_REPL_HISTORY,()=>{});
+if("NODE_REPL_HISTORY" in process.env && process.env.NODE_REPL_HISTORY !== "")r.setupHistory(process.env.NODE_REPL_HISTORY,()=>{});
 
 
