@@ -1,0 +1,3 @@
+#!/bin/bash
+
+node $HOME/prog/bin/node-repl-dir/repl.js "$@"
