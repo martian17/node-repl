@@ -23,7 +23,8 @@ for(let i = 0; i < files.length; i++){
 
 let r = repl.start({
     prompt:"> ",
-    useGlobal:true
+    useGlobal:true,
+    breakEvalOnSigint:true
 });
 
 if("NODE_REPL_HISTORY" in process.env && process.env.NODE_REPL_HISTORY !== "")r.setupHistory(process.env.NODE_REPL_HISTORY,()=>{});
